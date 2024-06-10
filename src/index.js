@@ -5,20 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import Clock from './chapter_04/Clock';
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-setInterval(()=>{
-  ReactDOM.render(
-    <React.StrictMode>
-      <Clock />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-},1000);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
 
 
 
