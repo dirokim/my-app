@@ -1,15 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Book from "./Book";
 
-import Library from './chapter_03/Library';
-
-ReactDOM.render(
-    <React.StrictMode>
-        <Library />
-    </React.StrictMode>,
-    document.getElementById('root')
-);
-reportWebVitals();
+function Library(props){
+    return (
+        <div>
+            <Book name="가나다라" numOfPage={300} />
+            <Book name="안녕하세요" numOfPage={400} />
+            <Book name="처음 뵙겠습니다" numOfPage={500} />
+        </div>
+    );
+}
+export default Library;

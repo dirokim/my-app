@@ -1,19 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import Clock from './chapter_04/Clock';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Library from './chapter_03/Library';
 
-root.render(
-  <React.StrictMode>
+setInterval(()=>{
+  ReactDOM.render(
+    <React.StrictMode>
+      <Clock />
+    </React.StrictMode>,
+    document.getElementById('root')
+  )
+})
 
-    <App />
+// ReactDOM.render(
+//   <React.StrictMode>
 
-  </React.StrictMode>
-);
+//     <Library/>
+
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 
 
